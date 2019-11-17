@@ -23,7 +23,9 @@ print(f"Результат генерации случайного вещест�
 
 ALPHABET = 'abcdefghijklmnopqrstuvwxyz'
 LEFT_LETTER = input("Введите букву английского алфавита - левая граница: ")
+LEFT_LETTER = LEFT_LETTER.lower()
 RIGHT_LETTER = input("Введите букву английского алфавита - правая граница: ")
+RIGHT_LETTER = RIGHT_LETTER.lower()
 INDEX_LEFT = ALPHABET.index(LEFT_LETTER)
 INDEX_RIGHT = ALPHABET.index(RIGHT_LETTER)
 INDEX_RANDOM = int(random()*(INDEX_RIGHT-INDEX_LEFT+1)+INDEX_LEFT)
