@@ -4,3 +4,28 @@
 треугольник существует, то определить, является ли он
 разносторонним, равнобедренным или равносторонним.
 """
+def Triangle_type(a,b,c):
+    if a == b == c:
+        print("Треугольник равносторонний")
+    elif a == b or b == c or a == c:
+        print("Треугольник равнобедренный")
+    else:
+        print("Треугольник разносторонний")
+
+A = float(input('Введите длину первого отрезка: '))
+B = float(input('Введите длину второго отрезка: '))
+C = float(input("Введите длину третьего отрезка: "))
+
+if A < B + C and B < A > C:
+    print("Это треугольник")
+    Triangle_type(A, B, C)
+elif B < A + C and A < B > C:
+    print("Это треугольник")
+    Triangle_type(A, B, C)
+elif C < A + B and A < C > B:
+    print("Это треугольник")
+    Triangle_type(A, B, C)
+else:
+    print("Это не треугольник")
+
+
