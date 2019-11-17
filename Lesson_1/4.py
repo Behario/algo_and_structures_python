@@ -8,3 +8,22 @@
 то вводятся эти символы. Программа должна вывести на экран любой
 символ алфавита от 'a' до 'f' включительно.
 """
+
+from random import random
+
+LEFT_INT = int(input("Начало диапазона: "))
+RIGHT_INT = int(input("Конец диапазона: "))
+NUMB_INT = int(random()*(RIGHT_INT-LEFT_INT+1)+LEFT_INT)
+print(f"Результат генерации случайного целого числа: {NUMB_INT}")
+
+LEFT_FLOAT = float(input("Начало диапазона: "))
+RIGHT_FLOAT = float(input("Конец диапазона "))
+NUMB_FLOAT = random() * (RIGHT_FLOAT-LEFT_FLOAT)+LEFT_FLOAT
+print(f"Результат генерации случайного вещественного числа: {round(NUMB_FLOAT, 3)}")
+
+
+
+
+
+
+
