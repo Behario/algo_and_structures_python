@@ -15,3 +15,21 @@ while NUMBER > 0:
 
 print(NUMBER_BACKWARD)
 
+
+# Через рекурсию
+
+
+def reverse(number, reverse_number=0):
+    if number == 0:
+        return f'{reverse_number}'
+    else:
+        reverse_number = int((reverse_number + (number % 10) * 0.1) * 10)
+        number = number // 10
+        return reverse(number, reverse_number)
+
+
+NUMBER = int(input("Введите число: "))
+
+print(reverse(NUMBER))
+
+
